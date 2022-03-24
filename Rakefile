@@ -67,7 +67,7 @@ module Builder
 		args << %{-arch "#{parch}"}
 		args << %{-project "#{project}"}
 		args << %{TARGETED_DEVICE_FAMILY="1,2"}
-		args << %{BUILT_PRODUCTS_DIR="build"}
+		args << %{BUILT_PRODUCTS_DIR="#{Dir.pwd}/build"}
 		args << %{CONFIGURATION_BUILD_DIR="#{dest}"}
 		args << %{CONFIGURATION_TEMP_DIR="#{dest}.build"}
 
